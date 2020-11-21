@@ -1,0 +1,1 @@
+To run the executable, place all jars/libarary files in the BatchConvert7.1_lib folder

@@ -1,0 +1,23 @@
+How to run a RasterMaster Java sample from the command line
+
+
+1. You should have the JDK (Java Development Kit) installed on your system. At this writing you can download the JDK for free from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+In the following examples the JDK is installed at this location (Windows): 
+C:\Program Files\Java\jdk1.7.0\bin
+
+
+2. Make sure the code sample you want to run is in a directory name that matches the package name. In this example RasterMaster was installed to c:\me. For example, the SingleConversion sample is in this directory: c:\me\com\snowbound\samples\convert
+
+3. Change directory to be in the top-level directory, the directory above "com".
+C:\> cd me
+C:\me> 
+
+4. Compile the sample from the command line by running javac from the JDK:
+
+
+C:\me> "C:\Program Files\Java\jdk1.7.0\bin\javac" -classpath ".;.\com\snowbound\Snow.jar;.\com\snowbound\snowcommon.jar;C:\Program Files\Java\jdk1.7.0\bin"  .\com\snowbound\samples\convert\SingleConversion.java
+
+
+5. Now run the sample from the command line, again from the top-level directory:
+C:\me> java -cp ".;.\com\snowbound\Snow.jar;.\com\snowbound\snowcommon.jar" com.snowbound.samples.convert.SingleConversion

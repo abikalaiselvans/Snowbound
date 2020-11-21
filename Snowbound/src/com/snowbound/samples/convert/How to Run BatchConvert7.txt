@@ -1,0 +1,28 @@
+How to run a RasterMaster BatchConvert sample from the command line
+
+You will need JDK1.6x and later to run BatchConvert
+1. You should have the JDK (Java Development Kit) installed on your system. At this writing you can download the JDK for free from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+In the following examples the JDK is installed at this location (Windows): 
+C:\Program Files\Java\jdk1.7.0\bin
+
+2. Make sure the code sample you want to run is in a directory name that matches the package name. In this example RasterMaster was installed to c:\RasterMaster. For example, so the directory will be
+   C:\RasterMaster\Samples\com\snowbound\samples\convert
+   
+3. Change directory to be in the top-level directory, the directory above "com".
+C:\> cd RasterMaster
+C:\RasterMaster> 
+
+4. Compile the sample from the command line by running javac from the JDK:
+
+	C:\RasterMaster> "C:\Program Files\Java\jdk1.7.0_06\bin\javac" -classpath 
+	".;.\Samples\com\snowbound\Snow.jar;.\Samples\com\snowbound\snowcommon.jar;C:\Program Files\Java\jdk1.7.0\bin"  
+	.\Samples\com\snowbound\samples\convert\BatchConvert.java
+	
+5. Now to run the BatchConvert, cd into Samples:
+   C:\RasterMaster>cd Samples
+   C:\RasterMaster>Samples>  "C:\Program Files\Java\jre7\bin\java" -cp 
+	                          ".;.\com\snowbound\Snow.jar;.\com\snowbound\snowcommon.jar" com.snowbound.samples.convert.BatchConvert
+
+6. Note: You change/add jar files in the class path as defined. Please not when adding jar files, make sure it placed right and with the right name
+   Also due to the resource used in the UI, the resource folder needs to be included inside \Samples\com\resource   	                         

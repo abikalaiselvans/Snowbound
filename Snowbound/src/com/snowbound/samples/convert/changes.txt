@@ -1,0 +1,62 @@
+BatchConvert7.1?
+******************
+This sample provides a GUI that lets you choose a directory or a list, then converts all of the files in the directory to an output directory.
+
+List of methods used in the samples
+***********************************
+IMG_display_bitmap_aspect(java.awt.Graphics,java.awt.Container,int,int,int,int,int)
+IMGLOW_get_pages(String)
+IMGLOW_set_document_intput(int,int,int)
+IMGLOW_decompress_bitmap(String,int)
+IMGLOW_extract_text(String,int[],int[],int)
+IMGLOW_set_pcl_input(int,int);
+IMGLOW_set_pdf_input(int,int);
+IMGLOW_set_comp_quality(int)
+IMGLOW_set_jpg_interleave(int,int)
+IMGLOW_set_fontmap_path(String)
+IMGLOW_set_pdf_output(int,int)
+IMGLOW_extract_page(String,int,int[])
+IMGLOW_set_fast_convert(int,int)
+IMGLOW_set_brightness(int)
+IMGLOW_set_contrast(int)
+IMGLOW_append_page(String,byte[],int)
+IMG_promote_24(void)
+IMG_promote_8(void)
+IMG_color_gray(void)
+IMG_save_bitmap(String,int)
+IMG_despeckle_bitmap(int)
+IMG_resize_bitmap(int,int)
+IMG_histogram_equalize(void)
+IMG_rgb_to_cmyk(void)
+IMG_diffusion_mono(void)	
+IMG_invert_bitmap(void)
+IMG_antique_effect(void)
+alias(int)
+alias_quality(int)
+threshold(int)
+
+BatchConvert7.1 new features and bug fixes:
+*******************************************
+1. Fix the issue with text extraction in other version
+2. Redesigned UI with new features
+3. Added a tabs to easily switch between document and image options
+3. Added picture controls
+4. Added option to save log file to any location and better logging of files
+5. Added multi-threading
+6. Made improvement towards how document are convert. All conversion are done in a background thread to improve UI    response.
+7. Added a list option to convert single or multiple files from any location
+8. Document can be split into multiple pages.
+9. PCL input options has been added
+10. Added an option to save-searchable when converting formarts which supports searchable like word,pcl,pdf,afp
+11. Option to extract a multi-age PDF
+12. Added antique effect
+13. Added option to increase image threshold using a spinner
+14. Added diffusion mono
+15. Added invert
+16. Added despeckle
+17. Added anti-aliasing and aliasing quality
+18. Added promote8-bit
+19. Added jpeg compression with interleave options
+20. Added option to append a files to an existing multipage PDF/Tiff file
+
+						

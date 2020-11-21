@@ -1,0 +1,1 @@
+Place all jars/libraries files here <BatchConvert7.1_lib> in order run BatchConvert7.1 executable
